@@ -3,7 +3,7 @@
 Collect news headlines of certain news portals like BBC, New York Times, Washington Post, Guardian
 
 Environment:
-**<a href="https://lying-tranquil-stream.glitch.me/">&DoubleRightArrow;Have a look at the project on glitch</a>**
+**<a href="https://lying-tranquil-stream.glitch.me/" target="_blank">&DoubleRightArrow;Have a look at the project on glitch</a>**
 
 **<a href="https://github.com/cory-sydn/">&DoubleRightArrow; Koray Soydan github</a>**
 
