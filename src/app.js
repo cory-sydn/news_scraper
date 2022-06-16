@@ -1,12 +1,8 @@
-// (window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost') ? 'http://localhost:8000/results' : 'http://localhost:8000/';
 const optionButtons = document.getElementsByClassName('option')
 const feed = document.getElementById('feed')
 
-
 let API_URL = "http://localhost:8000/bbc"
 let title = "BBC";
-
-//window.addEventListener('load', () => fetchNews(API_URL))    // default-openning page
 
 Array.prototype.forEach.call(optionButtons, option => {
 
