@@ -1,14 +1,14 @@
 const optionButtons = document.getElementsByClassName('option')
 const feed = document.getElementById('feed')
 
-let API_URL = "http://localhost:8000/bbc"
+let API_URL = "";
 let title = "BBC";
 
 Array.prototype.forEach.call(optionButtons, option => {
 
     option.addEventListener('click', () => {
         const { query } = option.dataset
-        API_URL = `http://localhost:8000/${query}`
+        API_URL = `${window.location.href}/${query}`
         const title = option.innerHTML || query[0].toUpperCase() + query.replace(/^\w/g, "")
         feed.innerHTML= `<h2 class="feed-title">${title} News Flow</h2>`
         fetchNews(API_URL)
@@ -21,7 +21,7 @@ const fetchNews = (url) => {
 
     const alert = document.createElement('div')
     alert.setAttribute("class", "alert-message")
-    alert.innerHTML = "Page is loading...";
+    alert.innerHTML = "Please wait\nPage is loading...";
     document.body.insertAdjacentElement("beforeend", alert)
 
     fetch(url)
